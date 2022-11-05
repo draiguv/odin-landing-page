@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav, header, footer {
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    color: #e5e7eb;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    gap: 1em;
+}
+
+.header-image {
+    background-color: #6d747d;
+}
+
+.header-info, .header-image {
+    height: 150px;
+    margin: 64px 0;
+    width: 350px;
+}
+
+header {
+    gap: 1em;
+    justify-content: center;
+}
