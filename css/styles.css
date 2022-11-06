@@ -1,3 +1,4 @@
+/******************************* ELEMENT SELECTORS *******************************/
 * {
     margin: 0;
 }
@@ -13,12 +14,30 @@ nav, header, footer {
     justify-content: space-around;
 }
 
-a {
+p, a {
     color: #e5e7eb;
     font-size: 18px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
     text-decoration: none;
 }
 
+header {
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+h1 {
+    line-height: 1.4;
+}
+
+/******************************* CLASS SELECTORS *******************************/
 .links {
     display: flex;
     gap: 1em;
@@ -34,12 +53,15 @@ a {
     width: 350px;
 }
 
-header {
-    gap: 1em;
-    justify-content: center;
-}
-
 .pikachu-header {
     height: 100%;
     width: 100%;
+}
+
+.sign-up {
+    background-color: #3882f6;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 30px;
 }
