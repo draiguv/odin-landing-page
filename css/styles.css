@@ -38,3 +38,8 @@ header {
     gap: 1em;
     justify-content: center;
 }
+
+.pikachu-header {
+    height: 100%;
+    width: 100%;
+}
