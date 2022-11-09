@@ -1,67 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
 /******************************* ELEMENT SELECTORS *******************************/
 * {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-nav, header, footer {
-    background-color: #1f2937;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-}
-
-p, a {
-    color: #e5e7eb;
-    font-size: 18px;
-}
-
-p {
-    margin-bottom: 10px;
-}
-
-a {
-    text-decoration: none;
-}
-
-header {
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
-}
-
-h1 {
-    line-height: 1.4;
+    font-family: Roboto, sans-serif;
+    line-height: 1;
 }
 
 /******************************* CLASS SELECTORS *******************************/
-.links {
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    /* padding: 0 30px; */
+}
+
+.boxes {
+    border: solid #3B82F6;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.navbar, .header, .footer{
+    background-color: #1f2937;
+}
+
+.header {
+    min-height: 400px;
     display: flex;
+}
+
+.navbar .logo {
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navlinks {
+    display: flex;
+    gap: 1em;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 1em;
 }
 
 .header-image {
-    background-color: #6d747d;
+    background-color: grey;
+    height: 50%;
 }
 
 .header-info, .header-image {
-    height: 150px;
-    margin: 64px 0;
-    width: 350px;
+    flex: 1;
 }
 
-.pikachu-header {
-    height: 100%;
-    width: 100%;
+.sub-container {
+    display: flex;
+}
+
+.container-boxes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.boxes {
+    margin-bottom: 8px;
+}
+
+.section-two {
+    background-color: #e5e7eb;
+    margin-top: 20px;
+}
+
+.section-three .container, .sign-up {
+    color: #fff;
+    background-color: #3882f6;
 }
 
 .sign-up {
-    background-color: #3882f6;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    padding: 8px 30px;
+    border-radius: 10px;
+    padding: 10px 30px;
+    border-style: none;
+}
+
+.section-three .sign-up {
+    border-color: #fff;
+    border-style: solid;
+}
+
+/******************************* MIX SELECTORS *******************************/
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar a, .header-info p {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.header-info h1 {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.header-info h1, .header-info p {
+    margin-bottom: 8px;
+}
+
+.section-one .container h2 {
+    padding: 10px 0;
+    text-align: center;
 }
