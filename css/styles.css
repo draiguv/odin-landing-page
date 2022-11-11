@@ -12,6 +12,12 @@ body {
     line-height: 1;
 }
 
+em {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
 /******************************* CLASS SELECTORS *******************************/
 .container {
     max-width: 1100px;
@@ -22,8 +28,8 @@ body {
 .boxes {
     border: solid #3B82F6;
     border-radius: 10px;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
 }
 
 .navbar, .header, .footer{
@@ -68,12 +74,17 @@ body {
     flex: 1;
 }
 
+.section-one {
+    margin-bottom: 64px;
+}
+
 .sub-container {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .container-boxes {
-    flex: 1;
+    flex: 0 1 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,7 +98,31 @@ body {
 
 .section-two {
     background-color: #e5e7eb;
-    margin-top: 20px;
+}
+
+.section-two .container {
+    color: #1f2937;
+    padding: 100px;
+    text-align: justify;
+}
+
+.section-three {
+    padding: 64px 0;
+}
+
+.section-three .container {
+    border-radius: 10px;
+    display: flex;
+    line-height: 1.2;
+    padding: 40px 100px;
+}
+
+.section-three-items:nth-child(1) {
+    flex: 1;
+}
+
+.section-three-items:nth-child(2) {
+    flex: 0 1 auto;
 }
 
 .section-three .container, .sign-up {
@@ -104,6 +139,12 @@ body {
 .section-three .sign-up {
     border-color: #fff;
     border-style: solid;
+}
+
+.footer {
+    color: #fff;
+    padding: 32px 0;
+    text-align: center;
 }
 
 /******************************* MIX SELECTORS *******************************/
@@ -130,7 +171,16 @@ body {
     margin-bottom: 8px;
 }
 
+.header-info p {
+    line-height: 1.5;
+}
+
 .section-one .container h2 {
-    padding: 10px 0;
+    padding: 40px 0;
     text-align: center;
+}
+
+.section-two h3 {
+    margin-top: 18px;
+    text-align: right;
 }
